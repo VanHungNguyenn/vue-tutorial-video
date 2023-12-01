@@ -3,8 +3,19 @@
 	<router-view></router-view>
 </template>
 
-<script setup>
+<script>
 import Navbar from '@/components/Navbar.vue'
+
+export default {
+	name: 'App',
+	components: {
+		Navbar,
+	},
+
+	created() {},
+
+	mounted() {},
+}
 </script>
 
 <style></style>

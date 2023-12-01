@@ -9,6 +9,16 @@
 			"id": 2,
 			"name": "Buy something",
 			"price": 200000
+		},
+		{
+			"id": 3,
+			"name": "Sell something",
+			"price": 200000
+		},
+		{
+			"id": 4,
+			"name": "Catch something",
+			"price": 300000
 		}
 	]
 }
