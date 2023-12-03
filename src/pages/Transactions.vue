@@ -19,19 +19,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import useTransactions from '../uses/fetchTransactions'
 
-const transactions = ref([])
-const error = ref(null)
+const { transactions, fetchAll } = useTransactions()
 
-fetch('http://localhost:3000/transactions')
-	.then((response) => response.json())
-	.then((data) => {
-		transactions.value = data
-	})
-	.catch((err) => {
-		error.value = err.message
-	})
+fetchAll()
+
+console.log('transactions', transactions)
 </script>
 
 <style scoped></style>
